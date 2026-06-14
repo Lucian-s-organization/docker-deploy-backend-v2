@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - feature/new-grading  # 【修改点 1】：新增对新分支的监听
+      - new-grading  # 【修改点 1】：新增对新分支的监听
   pull_request:
     branches:
       - main
