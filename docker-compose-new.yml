@@ -1,0 +1,8 @@
+services:
+  backend:
+    # 注意：这里先保持原来的镜像名，后面 CI/CD 会推送新镜像
+    image: wenyillaisi/234-deploylab-backend:latest
+    pull_policy: always
+    ports:
+      - "8083:8080"  # 将宿主机的 8083 映射到容器的 8080
+    restart: unless-stopped
